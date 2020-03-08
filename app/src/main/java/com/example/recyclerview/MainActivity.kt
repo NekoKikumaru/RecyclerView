@@ -14,10 +14,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var personArray = ArrayList<Person>()
-        personArray.add(Person("James", "Developer"))
-        personArray.add(Person("John", "Manager"))
-        personArray.add(Person("Alex", "Coach"))
-        personArray.add(Person("Tiger", "Player"))
+        personArray.add(Person("James", "Developer", R.drawable.wei_wuxian))
+        personArray.add(Person("John", "Manager", R.drawable.lan_wangji))
+        personArray.add(Person("Alex", "Coach", R.drawable.lan_xichen))
+        personArray.add(Person("Tiger", "Player", R.drawable.jin_guangyao))
+        personArray.add(Person("James", "Developer", R.drawable.jiang_cheng))
+        personArray.add(Person("John", "Manager", R.drawable.wen_qing))
+        personArray.add(Person("Alex", "Coach", R.drawable.wen_ning))
+        personArray.add(Person("Tiger", "Player", R.drawable.xue_yang))
 
         var personAdapter = PersonAdapter(personArray)
 //        recyclerView.layoutManager = LinearLayoutManager(this) // this is vertical
